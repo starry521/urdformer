@@ -186,7 +186,10 @@ def process_prediction(part_meshes, part_positions_starts, part_positions_ends, 
     return pred_data
 
 
-def evaluate(args, detection_args):
+def evaluate(args):
+    
+    detection_args = detection_config(args) # leave the defult groundingDINO argument unchanged
+
     input_path = args.image_path
     print('************ Applying Finetuned (Model Soup) GroundingDINO *******************')
     detector(args.scene_type, detection_args)
@@ -269,10 +272,13 @@ def main():
     # We also provided our finetuned GroundingDINO (model soup version) to automate this. We finetuned GroundingDino on our generated dataset, and
     # apply model soup for the pretrained and finetuned GroundingDINO. However, the perfect bbox prediction is not gauranteed and will be our future work.
 
-    args = parser.parse_args()
-    detection_args = detection_config(args) # leave the defult groundingDINO argument unchanged
+    # args = parser.parse_args()
+    # detection_args = detection_config(args) # leave the defult groundingDINO argument unchanged
 
-    evaluate(args, detection_args)
+    # evaluate(args, detection_args)
+    
+    args = parser.parse_args()
+    evaluate(args)
 
 
 if __name__ == "__main__":

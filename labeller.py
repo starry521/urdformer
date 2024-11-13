@@ -165,7 +165,7 @@ class BoundingBoxApp:
         img_name = os.path.basename(self.image_path)[:-4]
         np.save(f"{self.save_path}/{img_name}.npy", bboxes)
         # Print to console (optional, for verification)
-        print("Updated bounding boxes saved to 'grounding_dino/labels_manual/{img_name}.npy'")
+        print(f"Updated bounding boxes saved to 'grounding_dino/labels_manual/{img_name}.npy'")
 
         # Close the GUI window
         self.master.destroy()

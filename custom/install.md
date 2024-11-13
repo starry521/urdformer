@@ -1,6 +1,6 @@
 # Installation of urdformer
 
-> ***Note**: We provide a more detailed installation process based on the official.*
+> ***Note**: We provide a more detailed installation process based on the official, and restrictions are imposed on the versions of some libraries.*
 
 - Create an new python3.9 environment
 ```bash

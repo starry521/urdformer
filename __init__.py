@@ -1,3 +1,3 @@
-from .custom.URDFormer import URDFormer
+from .URDFormer import URDFormer
 
 __all__=["URDFormer"]

@@ -1,5 +1,12 @@
 # URDFormer
 
+> ***Note**: We have added some files based on this project to improve usability.*
+
+- URDFormer.py： Provide the URDFormer submodule image to urdf function.
+- config: Provide generate urdf config.
+- install.md: More detailed installation process based on the original project.
+- __init__.py: Define the interface that the submodule can call.
+
 [**URDFormer: A Pipeline for Constructing Articulated Simulation Environments from Real-World Images**](https://drive.google.com/file/d/1vXcBgf--ySQWeh3VFIiigAV8_cZi_Kzv/view?usp=sharing)  
 [Zoey Chen](https://qiuyuchen14.github.io/), [Aaron Walsman](https://aaronwalsman.com/), 
 [Marius Memmel](https://memmelma.github.io/), [Kaichun Mo](https://kaichun-mo.github.io/),

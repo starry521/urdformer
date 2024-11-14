@@ -18,3 +18,4 @@ accelerate==1.1.1
 gdown==5.2.0
 onnxscript==0.1.0.dev20241112
 huggingface-hub==0.25.0
+yacs==0.1.8
